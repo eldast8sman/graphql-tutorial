@@ -1,10 +1,2 @@
-type Query {
-  users: [User!]! @all,
-  user(id: ID @eq): User @find
-}
-
-type User {
-  id: ID
-  name: String
-  email_verified_at: String
-}
+#import user.graphql
+#import post.graphql
